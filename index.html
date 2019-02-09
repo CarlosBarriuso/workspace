@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="WorkSpace">
+
+    <link href="assets/fonts/font-awesome.css" rel="stylesheet" type="text/css">
+    <link href="assets/fonts/elegant-fonts.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700,900,400italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/zabuto_calendar.min.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+    
+   
+   <!-- icono web favicon -->
+   <link rel="icon" href="live/favicon.ico" type="image/x-icon"> 
+   <!-- <link rel="icon" type="image/x-icon" href="/live/favicon.ico" sizes="16x16 24x24 36x36 48x48"> -->
+    
+    <!-- titulo de la página     -->
+    <title>WorkSpace - Home</title>
+
+    <!-- <link rel="icon" href="favicon.ico" type="image/x-icon"> -->
+        
+
+</head>
+
+<body>
+<div class="page-wrapper">
+    <div id="page-header">
+        <header>
+            <div class="container">
+                <div class="secondary-nav">
+                    <div class="nav-trigger"><a data-toggle="collapse" href="#secondary-nav" aria-expanded="false" aria-controls="secondary-nav"><i class="fa fa-user"></i></a></div>
+                    <div id="secondary-nav">
+                        <nav>
+                            <div class="left opacity-60">
+                                <a href=""><i class="fa fa-phone"></i>+34 711 733 429</a>
+                                <a href="mailto:abernabe@workspace4u.com"><i class="fa fa-envelope"></i>info@workspace4u.com</a>
+                            </div>
+                            <!--end left-->
+                            <div class="right">
+                                <div class="element">
+                                    <select>
+                                        <option>$</option>
+                                        <option>€</option>
+                                    </select>
+                                </div>
+                                <!--end element-->
+                                <div class="element">
+                                    <a href="#tab-sign-in" data-toggle="modal" data-tab="true" data-target="#sign-in-register-modal">Sign In</a>
+                                </div>
+                                <!--end element-->
+                                <div class="element">
+                                    <a href="#tab-register" data-toggle="modal" data-tab="true" data-target="#sign-in-register-modal">Register</a>
+                                </div>
+                                <!--end element-->
+                                <div class="element">
+                                    <select>
+                                        <option>ES</option>
+                                        <!-- <option>DE</option> -->
+                                        <!-- <option>RU</option> -->
+                                        <option>EN</option>
+                                    </select>
+                                </div>
+                                <!--end element-->
+                            </div>
+                            <!--end right-->
+                        </nav>
+                    </div>
+                </div>
+                <!--end secondary-nav-->
+            </div>
+            <!--end container-->
+            <hr>
+            <div class="container">
+                <div class="primary-nav">
+                    <div class="left">
+                        <!-- <a href="index.html" id="brand"><img src="assets/img/logo.png" alt=""></a> -->
+                        <a class="nav-trigger" data-toggle="collapse" href="#primary-nav" aria-expanded="false" aria-controls="primary-nav"><i class="fa fa-navicon"></i></a>
+                    </div>
+                    <!--end left-->
+                    <div class="right" >
+                        <nav id="primary-nav">
+                            <ul>
+                                <!-- <li class="active"><a href="index.html">Home</a></li> -->
+                                <li><a href="#about-us.html">About</a></li>
+                                <li>
+                                    <a href="#" class="has-child">Share Your Space</a>
+                                    <!-- <ul class="child-nav"> -->
+                                        <!-- <li><a href="#listing.html">List Listing</a></li> -->
+                                        <!-- <li><a href="listing-matrix.html">Matrix Listing</a></li> -->
+                                    <!-- </ul> -->
+                                </li>
+                                <li>
+                                    <a href="#" class="has-child">Team</a>
+                                    <ul class="child-nav">
+                                    </ul>
+                                </li>
+                                <li><a href="contact-us.html">Contact Us</a></li>
+                                <li class="submit"><a href="#submit.html"><span>Submit</span><i data-toggle="tooltip" data-placement="top" title="Submit"><img src="assets/img/plus.png" alt=""></i></a></li>
+                            </ul>
+                        </nav>
+                        <!--end nav-->
+                    </div>
+                    <!--end right-->
+                </div>
+                <!--end primary-nav-->
+            </div>
+            <!--end container-->
+        </header>
+        <!--end header-->
+    </div>
+    <!--end page-header-->
+
+    <div id="page-content">
+        <div class="hero-section" data-height="600">
+            <form id="form-hero">
+                <div class="hero-inner">
+                    <div class="hero-wrapper" >
+                        <div class="caption">
+                            <div class="inner">
+                                <div class="container">
+                                    <h1 class="center"></h1> <!--texto de encima de los checkbox antes ponía WORK WHEREVER YOU WANT-->
+                                    <form>
+                                        <label class="radio-inline">
+                                            <input type="radio" name="opcradio">Co-working
+                                            <input type="radio" name="opcradio">Meeting Rooms
+                                        </label>
+                                    </form>
+                                    <div class="row no-gutters">
+                                        <div class="col-md-4 col-sm-4">
+                                            <div class="form-group">
+                                                <label class="label-on-input" for="address-autocomplete">City, Address, landmark</label>
+                                                <input type="text" class="form-control" id="address-autocomplete" name="location" placeholder="Paris, France">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2 col-sm-2">
+                                                <div class="form-group">
+                                                    <label class="label-on-input" for="form-check-in">Check In</label>
+                                                    <input type="text" class="form-control date" id="form-check-in" name="nights" placeholder="Check In Date">
+                                                </div>
+                                            </div>
+                                        <div class="col-md-2 col-sm-2">
+                                            <div class="form-group">
+                                                <label class="label-on-input" for="form-check-in">Check Out</label>
+                                                <input type="text" class="form-control date" id="form-check-in" name="nights" placeholder="Check Out Date">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2 col-sm-2">
+                                            <div class="form-group">
+                                                <label class="label-on-input" for="form-check-in">Employees</label>
+                                                <input type="text" class="form-control" placeholder="Employees">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2 col-sm-2">
+                                            <div class="form-group">
+                                                <button type="submit" class="btn btn-default">Start</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- <div class="favorite-search">
+                                        <span>Favorite Searches</span>
+                                        <a href="">Tokio</a>
+                                        <a href="">Barcelona</a>
+                                        <a href="">Lisboa</a>
+                                        <a href="">New York</a>
+                                    </div> -->
+                                    <!--end favorite-searches-->
+                                </div>
+                                <!--end container-->
+                                <div class="bg-transfer"><img src="assets/img/bg-hero.jpg" alt=""></div>
+                                <!--end bg-transfer-->
+                            </div>
+                            <!--end inner-->
+                        </div>
+                        <!--end caption-->
+                        <div class="options">
+                            <div class="container">
+                                <!-- <div class="wrapper"> -->
+                                    <!-- <h2>Further Options</h2> -->
+                                    <!-- <div class="row">
+                                        <div class="col-md-8 col-sm-7">
+                                            <ul class="checkboxes inline list-unstyled">
+                                                <li><label><input type="checkbox" name="space">Office</label></li>
+                                                <li><label><input type="checkbox" name="apartment">Rural Site</label></li>
+                                                <li><label><input type="checkbox" name="breakfast-only">Conference Room</label></li>
+                                                <li><label><input type="checkbox" name="spa-wellness">Putas de lujo</label></li>
+                                                <li><label><input type="checkbox" name="ski-center">Mas Putas</label></li>
+                                                <li><label><input type="checkbox" name="cottage">Cottage</label></li>
+                                                <li><label><input type="checkbox" name="hostel">Hostel</label></li>
+                                                <li><label><input type="checkbox" name="boat">Putas</label></li>
+                                            </ul>
+                                            
+                                        </div> -->
+                                        <!--end col-md-8-->
+                                        <!-- <div class="col-md-4 col-sm-5">
+                                            <div class="row">
+                                                <div class="col-md-6 col-sm-6">
+                                                    <div class="form-group">
+                                                        <label>Rate (Day)</label>
+                                                        <select class="form-control framed white">
+                                                            <option value="">$0 - $100</option>
+                                                            <option value="">$100 - $200</option>
+                                                            <option value="">$200+</option>
+                                                        </select>
+                                                    </div> -->
+                                                    <!--end form-group-->
+                                                <!-- </div> -->
+                                                <!--end col-md-6-->
+                                                <!-- <div class="col-md-6 col-sm-6">
+                                                    <div class="form-group">
+                                                        <label>Star Rating</label>
+                                                        <select class="form-control framed white">
+                                                            <option value="">1</option>
+                                                            <option value="">2</option>
+                                                            <option value="">3</option>
+                                                            <option value="">4</option>
+                                                            <option value="">5</option>
+                                                        </select>
+                                                    </div>
+                                                    end form-group -->
+                                                <!-- </div> -->
+                                                <!--end col-md-6-->
+                                            <!-- </div> -->
+                                            <!--end row-->
+                                        </div>
+                                        <!--end col-md-4-->
+                                    </div>
+                                    <!--end row-->
+                                </div>
+                                <!--end wrapper-->
+                            </div>
+                            <!--end container-->
+                        </div>
+                        <!--end options-->
+                    </div>
+                    <!--end hero-wrapper-->
+                    <div id="options-hidden" class="collapse">
+                        <div class="container">
+                            <!-- <div class="wrapper"> -->
+                                <!-- <h2>Facilities</h2> -->
+                                
+                                <!--end row-->
+                            <!-- </div> -->
+                            <!--end wrapper-->
+                        </div>
+                        <!--end container-->
+                    </div>
+                </div>
+                <!--end hero-inner-->
+                <!-- <div class="plate">
+                    <a data-toggle="collapse" href="#options-hidden" aria-expanded="false" aria-controls="options-hidden">View Further Options</a>
+                </div> -->
+                <!--end plate-->
+            <!-- </form> -->
+            <!--end form-->
+            <!-- <div class="map-wrapper"> -->
+                <!-- <div class="plate white">
+                    <a href="#" data-switch="#form-hero">Show Map</a>
+                </div> -->
+                <!--end plate-->
+                <!-- <div id="map-item" class="map height-100"></div> -->
+                <!--<img src="assets/img/map.jpg" alt="">-->
+            </div>
+        </div>
+        <!--end hero-section-->
+
+         <div class="block">
+         <div class="container"
+            <div class="title">
+                <h2 align="center">HOW DOES IT WORK</h2>
+         </div>
+                <div class="container">
+                    <div class="row" style="text-align: center;margin-top: 54px;margin-right: -394px;">
+                        <div class="col-md-3 col-sm-6">
+                            <article>
+                                <div class="feature-item">
+                                    <div class="wrap-feature-icon">
+                                        <div class="feature-icon">
+                                            <span class="icon icon-Carioca"></span>
+                                        </div>
+                                    </div>
+                                    <div class="title">COMPARE</div>
+                                    <div class="text">
+                                        Filter by you need (date, price, location, size,
+                                        technical equipament, facilities) and compare 
+                                        among a great variety of different options.
+                                    </div>
+                                </div>
+                            </article>
+                        </div> 
+                        <div class="col-md-3 col-sm-6">
+                            <article>
+                                <div class="feature-item">
+                                    <div class="wrap-feature-icon">
+                                        <div class="feature-icon">
+                                            <span class="icon icon-Heart"></span>
+                                        </div>
+                                    </div>
+                                    <div class="title">CHOOSE</div>
+                                    <div class="text">
+                                        Make your decision based on detailed 
+                                        descriptions, high quality pictures and the 
+                                        opinion from previus users.
+                                    </div>
+                                </div>
+                            </article>
+                        </div> 
+                        <div class="col-md-3 col-sm-6">
+                            <article>
+                                <div class="feature-item">
+                                    <div class="wrap-feature-icon">
+                                        <div class="feature-icon">
+                                            <span class="fa fa-dolar"></span>
+                                        </div>
+                                    </div>
+                                    <div class="title">CONFIRMATION</div>
+                                    <div class="text">
+                                        Select your payment method and you will
+                                        receibed the address and instructions to access 
+                                        your new working space.
+                                    </div>
+                                </div>
+                            </article>
+                        </div>  
+                    </div>
+                </div>
+         </div>
+
+        
+
+
+
+        <div class="block">
+            <div class="container">
+                <div class="title">
+                    <h2>DISCOVER WORKSPACE</h2>
+                </div>
+                <div class="row" style=" width:2400px; margin-top: 71px"> <!--ESPACIADO DE ITEMS COWORKING Y MEETING ROOMS-->
+
+                    <!-- ------------------------ START MEETINGS ROOMS ↓ ------------------------- -->
+
+                    <div class="col-md-3 col-sm-6">
+                        <div class="item big equal-height" data-map-latitude="40.38" data-map-longitude="-3.66" data-id="1">
+                            <div class="item-wrapper">
+                                <div class="image">
+                                  <a href="#detail.html">
+                                        <div>
+                                            <img src="assets/img/items/01.jpg" alt="">
+                                        </div>
+                                    </a>
+                                </div>
+                                <!--end image-->
+                                <div class="description"> 
+                                    <div class="meta">
+                                    </div>
+                                    <div class="info">
+                                        <a href="#detail.html"><h3>Coworking</h3></a>
+                                    </div>
+                                </div>
+                                <!--end description-->
+                                <div class="map-item">
+                                    <button class="btn btn-close"><i class="fa fa-close"></i></button>
+                                    <div class="map-wrapper"></div>
+                                </div>
+                                <!--end map-item-->
+                            </div>
+                        </div>
+                        <!--end item-->
+                    </div> 
+                    <!-- ------------------------ END COWORKING ↑ ------------------------- -->
+
+
+                   <!-- ------------------------ START MEETINGS ROOMS ↓ ------------------------- --> 
+
+                    <div class="col-md-3 col-sm-6">
+                        <div class="item big equal-height" data-map-latitude="40.38" data-map-longitude="-3.66" data-id="2">
+                            <div class="item-wrapper">
+                                <div class="image">
+                                   <a href="#coworkin.html" class="wrapper">
+                                        <div>
+                                            <img src="assets/img/items/02.jpg" alt="">
+                                        </div>
+                                    </a>
+                                    <div class="owl-navigation"></div>
+                                </div>
+
+                                <!--end image-->
+
+                                <div class="description">
+                                    <div class="meta">
+                                    </div>
+                                    <div class="info">
+                                        <a href="#coworkin.html"><h3>Meetings Rooms</h3></a>
+                                    </div>
+                                </div>
+
+                                <!--end description-->
+
+                                <div class="map-item">
+                                    <button class="btn btn-close"><i class="fa fa-close"></i></button>
+                                    <div class="map-wrapper"></div>
+                                </div>
+                    <!----------------------------END MEETING ROOMS ↑ ---------------------------------->
+
+                            </div> <!--END ITEM-WRAPPER -->
+                        </div> <!--END ITEM BIG EQUAL-HEIGHT-->
+                     </div><!--end col-md-6-->    
+                    </div> <!--END CLASS ROW-->
+                   </div> <!-- END CONTAINER-->
+                </div> <!-- END BLOCK-->
+               
+                    <!-- ------------------------ START RECENT SPACE ↓ ------------------------------ -->
+
+        <div class="block">
+            <div class="container">
+                <div class="title">
+                    <h2>Best-Ranked Coworkin Spaces</h2>
+                </div>
+                <!--end title-->
+                <div class="row">
+                    <div class="col-md-30 col-sm-30">
+                            <div class="col-md-3 col-sm-6">
+                                    <div class="item big equal-height" data-map-latitude="40.38" data-map-longitude="-3.66" data-id="1">
+                                        <div class="item-wrapper">
+                                            <div class="image">
+                                                <div class="mark-circle description" data-toggle="tooltip" data-placement="right" title="Office with every detail to put you to work at the time you want. WORKSPACE  "><i class="fa fa-question"></i></div>
+                                                <div class="mark-circle map" data-toggle="tooltip" data-placement="right" title="Show on map"><i class="fa fa-map-marker"></i></div>
+                                                <div class="mark-circle top" data-toggle="tooltip" data-placement="right" title="Top Spaces"><i class="fa fa-thumbs-up"></i></div>
+                                                <a href="detail.html" class="wrapper">
+                                                    <div class="gallery">
+                                                        <img src="assets/img/items/01.jpg" alt="">
+                                                        <img src="#" class="owl-lazy" alt="" data-src="assets/img/items/11.jpg">
+                                                        <img src="#" class="owl-lazy" alt="" data-src="assets/img/items/20.jpg">
+                                                    </div>
+                                                </a>
+                                                <div class="owl-navigation"></div>
+                                                <!--end owl-navigation-->
+                                            </div>
+                                            <!--end image-->
+                                            <div class="description">
+                                                <div class="meta">
+                                                    <span><i class="fa fa-star"></i>9.1</span>
+                                                    <span><i class="fa fa-eye"></i></i>50.000</span>
+                                                    
+                                                </div>
+                                                <div class="info">
+                                                    <figure class="label label-info">Office</figure>
+                                                    <a href="detail.html"><h3>Design & Efficiency</h3></a>
+                                                    <figure class="location">Madrid</figure>
+                                                </div>
+                                            </div>
+                                            <!--end description-->
+                                            <div class="map-item">
+                                                <button class="btn btn-close"><i class="fa fa-close"></i></button>
+                                                <div class="map-wrapper"></div>
+                                            </div>
+                                            <!--end map-item-->
+                                        </div>
+                                    </div>
+                                    <!--end item-->
+                                </div>
+                            <!--end col-md-3------------------------------------------------------------------------------------------------>
+                            <div class="col-md-3 col-sm-6">
+                                    <div class="item big equal-height" data-map-latitude="40.38" data-map-longitude="-3.66" data-id="1">
+                                        <div class="item-wrapper">
+                                            <div class="image">
+                                                <div class="mark-circle description" data-toggle="tooltip" data-placement="right" title="Office with every detail to put you to work at the time you want. WORKSPACE  "><i class="fa fa-question"></i></div>
+                                                <div class="mark-circle map" data-toggle="tooltip" data-placement="right" title="Show on map"><i class="fa fa-map-marker"></i></div>
+                                                <div class="mark-circle top" data-toggle="tooltip" data-placement="right" title="Top Spaces"><i class="fa fa-thumbs-up"></i></div>
+                                                <a href="detail.html" class="wrapper">
+                                                    <div class="gallery">
+                                                        <img src="assets/img/items/02.jpg" alt="">
+                                                        <img src="#" class="owl-lazy" alt="" data-src="assets/img/items/11.jpg">
+                                                        <img src="#" class="owl-lazy" alt="" data-src="assets/img/items/20.jpg">
+                                                    </div>
+                                                </a>
+                                                <div class="owl-navigation"></div>
+                                                <!--end owl-navigation-->
+                                            </div>
+                                            <!--end image-->
+                                            <div class="description">
+                                                <div class="meta">
+                                                    <span><i class="fa fa-star"></i>9.7</span>
+                                                    <span><i class="fa fa-eye"></i></i>29.200</span>
+                                                    
+                                                </div>
+                                                <div class="info">
+                                                    <figure class="label label-info">Individual Office</figure>
+                                                    <a href="detail.html"><h3>Design & Efficiency</h3></a>
+                                                    <figure class="location">Barcelona</figure>
+                                                </div>
+                                            </div>
+                                            <!--end description-->
+                                            <div class="map-item">
+                                                <button class="btn btn-close"><i class="fa fa-close"></i></button>
+                                                <div class="map-wrapper"></div>
+                                            </div>
+                                            <!--end map-item-->
+                                        </div>
+                                    </div>
+                                    <!--end item-->
+                                </div>
+                            <!--end col-md-3------------------------------------------------------------------------------------------------>
+                            <div class="col-md-3 col-sm-6">
+                                    <div class="item big equal-height" data-map-latitude="40.38" data-map-longitude="-3.66" data-id="1">
+                                        <div class="item-wrapper">
+                                            <div class="image">
+                                                <div class="mark-circle description" data-toggle="tooltip" data-placement="right" title="Office with every detail to put you to work at the time you want. WORKSPACE  "><i class="fa fa-question"></i></div>
+                                                <div class="mark-circle map" data-toggle="tooltip" data-placement="right" title="Show on map"><i class="fa fa-map-marker"></i></div>
+                                                <div class="mark-circle top" data-toggle="tooltip" data-placement="right" title="Top Spaces"><i class="fa fa-thumbs-up"></i></div>
+                                                <a href="detail.html" class="wrapper">
+                                                    <div class="gallery">
+                                                        <img src="assets/img/items/03.jpg" alt="">
+                                                        <img src="#" class="owl-lazy" alt="" data-src="assets/img/items/11.jpg">
+                                                        <img src="#" class="owl-lazy" alt="" data-src="assets/img/items/20.jpg">
+                                                    </div>
+                                                </a>
+                                                <div class="owl-navigation"></div>
+                                                <!--end owl-navigation-->
+                                            </div>
+                                            <!--end image-->
+                                            <div class="description">
+                                                <div class="meta">
+                                                    <span><i class="fa fa-star"></i>9</span>
+                                                    <span><i class="fa fa-eye"></i></i>35.114</span>
+                                                    
+                                                </div>
+                                                <div class="info">
+                                                    <figure class="label label-info">Meeting Room</figure>
+                                                    <a href="detail.html"><h3> Efficiency</h3></a>
+                                                    <figure class="location">Valencia</figure>
+                                                </div>
+                                            </div>
+                                            <!--end description-->
+                                            <div class="map-item">
+                                                <button class="btn btn-close"><i class="fa fa-close"></i></button>
+                                                <div class="map-wrapper"></div>
+                                            </div>
+                                            <!--end map-item-->
+                                        </div>
+                                    </div>
+                                    <!--end item-->
+                                </div>
+                            <!--end col-md-3-------------------------------------------------------------------------------------------------------------->
+                            <div class="col-md-3 col-sm-6">
+                                    <div class="item big equal-height" data-map-latitude="40.38" data-map-longitude="-3.66" data-id="1">
+                                        <div class="item-wrapper">
+                                            <div class="image">
+                                                <div class="mark-circle description" data-toggle="tooltip" data-placement="right" title="Office with every detail to put you to work at the time you want. WORKSPACE  "><i class="fa fa-question"></i></div>
+                                                <div class="mark-circle map" data-toggle="tooltip" data-placement="right" title="Show on map"><i class="fa fa-map-marker"></i></div>
+                                                <div class="mark-circle top" data-toggle="tooltip" data-placement="right" title="Top Spaces"><i class="fa fa-thumbs-up"></i></div>
+                                                <a href="detail.html" class="wrapper">
+                                                    <div class="gallery">
+                                                        <img src="assets/img/items/04.jpg" alt="">
+                                                        <img src="#" class="owl-lazy" alt="" data-src="assets/img/items/11.jpg">
+                                                        <img src="#" class="owl-lazy" alt="" data-src="assets/img/items/20.jpg">
+                                                    </div>
+                                                </a>
+                                                <div class="owl-navigation"></div>
+                                                <!--end owl-navigation-->
+                                            </div>
+                                            <!--end image-->
+                                            <div class="description">
+                                                <div class="meta">
+                                                    <span><i class="fa fa-star"></i>9.3</span>
+                                                    <span><i class="fa fa-eye"></i></i>31.008</span>
+                                                    
+                                                </div>
+                                                <div class="info">
+                                                    <figure class="label label-info">Hall Meeting Room</figure>
+                                                    <a href="detail.html"><h3>High Level</h3></a>
+                                                    <figure class="location">France</figure>
+                                                </div>
+                                            </div>
+                                            <!--end description-->
+                                            <div class="map-item">
+                                                <button class="btn btn-close"><i class="fa fa-close"></i></button>
+                                                <div class="map-wrapper"></div>
+                                            </div>
+                                            <!--end map-item-->
+                                        </div>
+                                    </div>
+                                    <!--end item-->
+                                </div>
+                            <!-- end col-md-3 ---------------------------------------------------------------------------------------------------->
+                            
+                    <!-- ------------------------ END RECENT SPACE ↑ ------------------------------ -->
+
+
+        <div class="block">
+            <div class="container">
+                <div class="title">
+                    <h2>Our Picks</h2>
+                </div>
+                <!--end title-->
+                <div class="grid masonry">
+                    <div class="grid-item">
+                        <a href="#">
+                            <h3>Melbourne</h3>
+                            <img src="assets/img/items/pick-01.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="grid-item">
+                        <a href="#">
+                            <h3>Prague</h3>
+                            <img src="assets/img/items/pick-02.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="grid-item grid-item--width2">
+                        <a href="#">
+                            <h3>Madrid</h3>
+                            <img src="assets/img/items/pick-03.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="grid-item grid-item--width2">
+                        <a href="#">
+                            <h3>New York</h3>
+                            <img src="assets/img/items/pick-04.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="grid-item">
+                        <a href="#">
+                            <h3>Brasil</h3>
+                            <img src="assets/img/items/pick-05.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--end block-->
+
+        <div class="block">
+            <div class="container">
+                <div class="title">
+                    <h2>Favorite Offices</h2>
+                </div>
+                <!--end title-->
+               <ul class="list-links">
+                   <li><a href="#">Tenerife<span>23</span></a></li>
+                   <li><a href="#">Al Madinah<span>12</span></a></li>
+                   <li><a href="#">Koh Samui<span>76</span></a></li>
+                   <li><a href="#">Cotswolds<span>52</span></a></li>
+                   <li><a href="#">Lake District<span>63</span></a></li>
+                   <li><a href="#">Cornwall<span>15</span></a></li>
+                   <li><a href="#">Algarve<span>19</span></a></li>
+                   <li><a href="#">Ibiza<span>90</span></a></li>
+                   <li><a href="#">New Forest<span>57</span></a></li>
+                   <li><a href="#">Phuket Province<span>82</span></a></li>
+                   <li><a href="#">Loch Lomond<span>24</span></a></li>
+                   <li><a href="#">Gran Canaria<span>23</span></a></li>
+                   <li><a href="#">Majorca<span>33</span></a></li>
+                   <li><a href="#">Isle of Wight<span>74</span></a></li>
+                   <li><a href="#">Jersey<span>51</span></a></li>
+                   <li><a href="#">Isle of Man<span>23</span></a></li>
+                   <li><a href="#">Santoríni<span>36</span></a></li>
+                   <li><a href="#">Mykonos<span>55</span></a></li>
+                   <li><a href="#">Lanzarote<span>78</span></a></li>
+                   <li><a href="#">Bali<span>17</span></a></li>
+               </ul>
+                <!--end list-links-->
+            </div>
+            <!--end container-->
+        </div>
+        <!--end block-->
+
+        <div class="container">
+            <div class="block">
+                <div class="title">
+                    <h2>Reviews</h2>
+                    <div class="row">
+                        <div class="col-md-3 col-sm-3">
+                            <div class="review-single">
+                                <a href="detail.html#reviews"><h3>Space New York</h3></a>
+                                <figure class="location">5 ST New York</figure>
+                                <div class="rating"><i class="fa fa-star"></i>8.9</div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                                        nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
+                                        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt 
+                                        mollit anim id est laborum
+                                </p>
+                                <a href="detail.html#reviews" class="link icon">Full Review<i class="arrow_right"></i></a>
+                            </div>
+                            <!--end review-->
+                        </div>
+                        <!--end col-md-3-->
+                        <div class="col-md-3 col-sm-3">
+                            <div class="review-single">
+                                <a href="detail.html#reviews"><h3>Space France</h3></a>
+                                <figure class="location">Paris</figure>
+                                <div class="rating"><i class="fa fa-star"></i>9.3</div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                                        nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
+                                        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt 
+                                        mollit anim id est laborum
+                                </p>
+                                <a href="detail.html#reviews" class="link icon">Full Review<i class="arrow_right"></i></a>
+                            </div>
+                            <!--end review-->
+                        </div>
+                        <!--end col-md-3-->
+                        <div class="col-md-3 col-sm-3">
+                            <div class="review-single">
+                                <a href="detail.html#reviews"><h3>Space in Spain</h3></a>
+                                <figure class="location">Barcelona</figure>
+                                <div class="rating"><i class="fa fa-star"></i>9.6</div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                                        nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
+                                        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt 
+                                        mollit anim id est laborum
+                                </p>
+                                <a href="detail.html#reviews" class="link icon">Full Review<i class="arrow_right"></i></a>
+                            </div>
+                            <!--end review-->
+                        </div>
+                        <!--end col-md-3-->
+                        <div class="col-md-3 col-sm-3">
+                            <div class="review-single">
+                                <a href="detail.html#reviews"><h3>Space Portugal</h3></a>
+                                <figure class="location">Lisboa</figure>
+                                <div class="rating"><i class="fa fa-star"></i>9.4</div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                                        nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
+                                        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt 
+                                        mollit anim id est laborum
+                                </p>
+                                <a href="detail.html#reviews" class="link icon">Full Review<i class="arrow_right"></i></a>
+                            </div>
+                            <!--end review-->
+                        </div>
+                        <!--end col-md-3-->
+                    </div>
+                    <!--end row-->
+                </div>
+                <!--end title-->
+                <div class="bg color white"></div>
+            </div>
+            <!--end container-->
+        </div>
+        <!--end block-->
+    </div>
+    <!--end page-content-->
+
+    <footer>
+          
+            <!-- ========================== -->
+            <!-- FOOTER - SOCIAL -->
+            <!-- ========================== -->
+            <section class="social-section dark dark-strong">
+                <div class="container dark-content">
+                    <div class="tt">We are social 24/7 - Get in touch</div>
+                    <ul class="list-socials">
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                        <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                        <li><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- ========================== -->
+            <!-- FOOTER - FOOTER -->
+            <!-- ========================== -->
+            <section class="footer-section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-3">
+                            <h5>About us</h5>
+                            <p>Lorem ipsum dolor sit amet consect etural
+                                adipisicing elit sed don eiusmod temp enim
+                                minim veniam quis notrud exercitation lore
+                                ipsum dolor sit amet.</p>
+                        </div>
+                        <div class="col-md-3 col-sm-3">
+                            <h5>Sitemap</h5>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <ul class="footer-nav">
+                                        <li><a href="#">About Us</a></li>
+                                        <li><a href="#">Share your Space</a></li>
+                                        <li><a href="#">Team</a></li>
+                                        <li><a href="#">Contact us</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <ul class="footer-nav">
+                                        <li><a href="#">Get Help</a></li>
+                                        <li><a href="#">Careers</a></li>
+                                        <li><a href="#">FAQ's</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-3">
+                            <h5>Contact info</h5>
+                            <ul class="contacts-list">
+                                <li>
+                                    <p><i class="icon icon-House"></i>Goya 2, Madrid, Spain 28053</p>
+                                </li>
+                                <li>
+                                    <p><i class="icon icon-Phone2"></i>+34 711 733 429</p>
+                                </li>
+                                <li>
+                                    <p><i class="icon icon-Mail"></i><a href="mailto:info@workspace4u.com">info@workspace4u.com</a> </p>
+
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3 col-sm-3">
+                            <h5>newsletter</h5>
+                            <p>
+                                Subscribe to our newsletter for latest updates 
+                                about our creative agency
+                            </p>
+                            <div class="form-group has-feedback">
+                                <input type="email" class="form-control " placeholder="Email address ...">
+                                <i class="icon icon-Mail form-control-feedback"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="copyright-section">
+                <p>©2019 <span> WorkSpace,</span>. All Rights Reserved</p>
+            </section>
+        </footer>
+    <!--end page-footer-->
+</div>
+<!--end page-wrapper-->
+<a href="#page-header" class="to-top scroll" data-show-after-scroll="600"><i class="arrow_up"></i></a>
+
+
+
+<script type="text/javascript" src="assets/js/jquery-2.2.1.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false&libraries=places"></script>
+<script type="text/javascript" src="assets/js/infobox.js"></script>
+<script type="text/javascript" src="assets/js/markerclusterer_packed.js"></script>
+<script type="text/javascript" src="assets/js/richmarker-compiled.js"></script>
+<script type="text/javascript" src="assets/js/markerwithlabel_packed.js"></script>
+<script type="text/javascript" src="assets/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery.validate.min.js"></script>
+<script type="text/javascript" src="assets/js/bootstrap-datepicker.js"></script>
+<script type="text/javascript" src="assets/js/icheck.min.js"></script>
+<script type="text/javascript" src="assets/js/owl.carousel.js"></script>
+<script type="text/javascript" src="assets/js/masonry.pkgd.min.js"></script>
+<script type="text/javascript" src="//maps.googleapis.com/maps/api/js?key=AIzaSyDu0963HPI-koP8Duyq7UzGTVo8mL7e-G4"></script>
+
+<script type="text/javascript" src="assets/js/maps.js"></script>
+<script type="text/javascript" src="assets/js/custom.js"></script>
+
+<!--[if lte IE 9]>
+<script src="assets/js/ie.js"></script>
+<![endif]-->
+
+<script>
+    var _latitude = 40.4167;
+    var _longitude = -3.70325;
+    var element = "map-item";
+    var useAjax = true;
+    bigMap(_latitude,_longitude, element, useAjax);
+</script>
+</body>
